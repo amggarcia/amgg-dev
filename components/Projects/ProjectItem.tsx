@@ -1,5 +1,5 @@
 import React from "react";
-import { Project } from "../staticData/ProjectData";
+import { Project } from "../../staticData/ProjectData";
 import Image from "next/image";
 import Link from "next/link";
 interface Props {
@@ -19,7 +19,7 @@ export default function ProjectItem({ project }: Props) {
       </div>
       <div className="mt-12 flex justify-center">
         <Link
-          href={"/"}
+          href={`/projects/${project.slug}`}
           className="bg-slate-600 hover:bg-slate-800 text-white font-bold border-2 border-slate-800 py-2 px-4 rounded-full"
         >
           <a className="bg-slate-600 hover:bg-slate-800 text-white font-bold border-2 border-slate-800 py-2 px-4 rounded-full">

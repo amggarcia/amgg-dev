@@ -1,8 +1,9 @@
 import type { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
 import BackgroundImageContainer from "../components/BackgroundImageContainer";
-import ProjectList from "../components/ProjectList";
+import Header from "../components/Header";
+import ProjectList from "../components/Projects/ProjectList";
 import Section from "../components/Section";
-import SkillsContainer from "../components/SkillsContainer";
+import SkillsContainer from "../components/Skills/SkillsContainer";
 import Socials from "../components/Socials";
 import { Projects, Project } from "../staticData/ProjectData";
 
@@ -12,16 +13,12 @@ interface PageProps {
 
 const Home = ({ projects }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
-    <div className="bg-slate-700 h-full">
+    <div>
       <BackgroundImageContainer>
-        <header className="flex flex-col items-center h-96 justify-center">
-          <div className="container mx-auto px-8 lg:px-24 w-full text-white text-3xl font-bold uppercase ">
-            <h1 className="pb-4 mb-4 border-gray-500 border-b-2">
-              André Garcia
-            </h1>
-            <span className="font-light text-lg">Full stack developper</span>
-          </div>
-        </header>
+        <Header
+          primaryTitle="André Garcia"
+          subtitle="Full Stack Developper"
+        ></Header>
       </BackgroundImageContainer>
       <main>
         <Section index={0} title="About me">

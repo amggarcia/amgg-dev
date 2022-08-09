@@ -1,5 +1,5 @@
 import React from "react";
-import { Project } from "../staticData/ProjectData";
+import { Project } from "../../staticData/ProjectData";
 import ProjectItem from "./ProjectItem";
 
 interface Props {
