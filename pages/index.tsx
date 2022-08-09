@@ -37,7 +37,7 @@ const Home = ({ projects }: InferGetStaticPropsType<typeof getStaticProps>) => {
         <Section index={1} title="Skills">
           <SkillsContainer size={60}></SkillsContainer>
         </Section>
-        <Section index={2} title="Projects">
+        <Section sectionId="projectList" index={2} title="Projects">
           <p className="text-white font-thin text-sm">
             These are some of the projects in which i had the oportunity to work
             on, some professionaly others being personal side-projects that you
@@ -51,7 +51,7 @@ const Home = ({ projects }: InferGetStaticPropsType<typeof getStaticProps>) => {
           <ProjectList projects={projects}></ProjectList>
         </Section>
         <BackgroundImageContainer centerBackground={false}>
-          <Section index={3} noBackground={true} title="Get in touch">
+          <Section index={4} noBackground={true} title="Get in touch">
             <Socials></Socials>
           </Section>
         </BackgroundImageContainer>

@@ -1,6 +1,7 @@
 import type { Project } from "../../staticData/ProjectData";
 import BackgroundImageContainer from "../BackgroundImageContainer";
 import Header from "../Header";
+import Link from "../Link";
 import Section from "../Section";
 import Socials from "../Socials";
 import ProjectSectionParagraphs from "./ProjectSectionParagraphs";
@@ -22,12 +23,16 @@ export default function ProjectPageComponent({ project }: Props) {
               <ProjectSectionParagraphs
                 paragraphs={section.paragraphs}
               ></ProjectSectionParagraphs>
+              {index == project.sections?.length - 1 && (
+                <div className="flex mt-12 justify-center">
+                  <Link href={"/#projectList"} title="Other Projects"></Link>
+                </div>
+              )}
             </Section>
           );
         })}
 
         <BackgroundImageContainer centerBackground={false}>
-          {/* Need to check the section thing on uneven section*/}
           <Section
             index={project.sections.length + 1 || 0}
             noBackground={true}

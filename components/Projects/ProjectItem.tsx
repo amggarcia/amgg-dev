@@ -1,7 +1,7 @@
 import React from "react";
 import { Project } from "../../staticData/ProjectData";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "../Link";
 interface Props {
   project: Project;
 }
@@ -18,14 +18,7 @@ export default function ProjectItem({ project }: Props) {
         <p className="font-light text-s">{project.shortDesc}</p>
       </div>
       <div className="mt-12 flex justify-center">
-        <Link
-          href={`/projects/${project.slug}`}
-          className="bg-slate-600 hover:bg-slate-800 text-white font-bold border-2 border-slate-800 py-2 px-4 rounded-full"
-        >
-          <a className="bg-slate-600 hover:bg-slate-800 text-white font-bold border-2 border-slate-800 py-2 px-4 rounded-full">
-            Read more
-          </a>
-        </Link>
+        <Link href={`/projects/${project.slug}`} title="Read more"></Link>
       </div>
     </div>
   );
