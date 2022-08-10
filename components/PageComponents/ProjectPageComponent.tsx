@@ -5,7 +5,7 @@ import Link from "../Link";
 import Section from "../Section";
 import Socials from "../Socials";
 import ProjectSectionParagraphs from "./ProjectSectionParagraphs";
-
+import Head from "next/head";
 export interface Props {
   project: Project;
 }
@@ -13,6 +13,15 @@ export interface Props {
 export default function ProjectPageComponent({ project }: Props) {
   return (
     <div>
+      <Head>
+        <title>{project.title}</title>
+        <meta property="og:title" key="title" content={project.title} />
+        <meta
+          property="og:description"
+          key="description"
+          content={project.shortDesc}
+        />
+      </Head>
       <BackgroundImageContainer>
         <Header primaryTitle={project.title}></Header>
       </BackgroundImageContainer>

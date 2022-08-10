@@ -6,7 +6,7 @@ import Section from "../components/Section";
 import SkillsContainer from "../components/Skills/SkillsContainer";
 import Socials from "../components/Socials";
 import { Projects, Project } from "../staticData/ProjectData";
-
+import Head from "next/head";
 interface PageProps {
   projects: Project[];
 }
@@ -14,6 +14,22 @@ interface PageProps {
 const Home = ({ projects }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <div>
+      <Head>
+        <title>André Garcia Full Stack Developer</title>
+        <meta
+          property="og:title"
+          key="title"
+          content="André Garcia Full Stack Developer"
+        />
+        <meta
+          property="og:description"
+          key="description"
+          content="My name is André Garcia, i am a Software Developer from
+            Portugal with industry experience building web applications,
+            back-end services and API's using Vue.js, React, .Net Core and
+            Typescript."
+        />
+      </Head>
       <BackgroundImageContainer>
         <Header
           primaryTitle="André Garcia"
@@ -23,10 +39,10 @@ const Home = ({ projects }: InferGetStaticPropsType<typeof getStaticProps>) => {
       <main>
         <Section index={0} title="About me">
           <p className="text-white font-thin text-sm">
-            Hello my name is André Garcia, i am a software developer from
+            Hello my name is André Garcia, i am a Software Developer from
             Portugal with industry experience building web applications,
-            back-end services and API&apos;s using .Net Core, Javascript,
-            Angular, Vue.js and React
+            back-end services and API&apos;s using Vue.js, React, .Net Core and
+            Typescript.
           </p>
           <p className="text-white font-thin text-sm mt-4">
             I&apos;m always looking forward to find and learn the best tool for
