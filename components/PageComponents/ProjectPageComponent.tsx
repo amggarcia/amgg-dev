@@ -19,7 +19,7 @@ export default function ProjectPageComponent({ project }: Props) {
       <main>
         {project.sections?.map((section, index) => {
           return (
-            <Section index={index} title={section.sectionTitle}>
+            <Section index={index} key={index} title={section.sectionTitle}>
               <ProjectSectionParagraphs
                 paragraphs={section.paragraphs}
               ></ProjectSectionParagraphs>

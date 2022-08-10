@@ -25,12 +25,12 @@ const Home = ({ projects }: InferGetStaticPropsType<typeof getStaticProps>) => {
           <p className="text-white font-thin text-sm">
             Hello my name is André Garcia, i am a software developer from
             Portugal with industry experience building web applications,
-            back-end services and API's using .Net Core, Javascript, Angular,
-            Vue.js and React
+            back-end services and AP&apos;'s using .Net Core, Javascript,
+            Angular, Vue.js and React
           </p>
           <p className="text-white font-thin text-sm mt-4">
-            I'm always looking forward to find and learn the best tool for the
-            job at hand, and the oportunity to take on new and interesting
+            I&apos;m always looking forward to find and learn the best tool for
+            the job at hand, and the oportunity to take on new and interesting
             challenges.
           </p>
         </Section>

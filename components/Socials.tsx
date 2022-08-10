@@ -8,6 +8,7 @@ export default function Socials() {
           className="flex items-center"
           href="https://www.linkedin.com/in/amggarcia/"
           target="_blank"
+          rel="noreferrer"
         >
           <svg
             fill="#ffffff"
@@ -27,6 +28,7 @@ export default function Socials() {
           className="flex items-center"
           href="https://github.com/amggarcia"
           target="_blank"
+          rel="noreferrer"
         >
           <svg
             fill="#ffffff"
