@@ -128,25 +128,23 @@ export const Projects : Project[] =
 			{
 				"sectionTitle": "Project Scope",
 				"paragraphs": [
-					"This was a personal project in which the goal was to create a simple personal website that i could use as a 'portfolio' of sorts, and easily update and mantain during its lifespan.",
-					"which to date should be the website where this is currently being viewed."
+					"This was a personal project in which the goal was to create a simple personal website that I could use as a 'portfolio' of sorts, and easily update and mantain during its lifespan.",
 				]
 			},
 			{
 				"sectionTitle": "Technology Stack",
 				"paragraphs": [
-					"The website is developed using Gatsby.",
-					"Gatsby was chosen as the framework because it matched on the goals i had for the website when it was first developed.",
-					"Gatsby facilitates the generation of static-websites and makes it easy to dynamicly add new pages/segments from markup files."
+					"The current version of the site is developed using React, Next.js, Typescript and TailwindCSS.",
+					"An initial version of the site used Gatsby as a static site generator, but later when upgrading the site I decided to move it to Next.js.",
+					"Next.js still provides the static site generation features that were being used from Gatsby on the previous version and makes the setup and future maintenance of the website simpler due to having less dependencies required for achieving almost the same goal."
 				]
 			},
 			{
 				"sectionTitle": "Roles",
 				"paragraphs": [
 					"First and foremost, need to give credit where credit is due.",
-					"The design you see is from <a href=\"https://html5up.net/m\"><b>HTML5 UP</b></a> who does a great job creating responsive designs you can use.",
-					"And <a href=\"https://github.com/anubhavsrivastava\"><b>Anubhav Srivastava</b></a> for converting the desing into a <a href=\"https://www.gatsbyjs.com/starters/anubhavsrivastava/gatsby-starter-solidstate\"><b>Gatsby JS starter</b></a>.",
-					"Using this design and starter, what was left to do was setting up Gatsby to read from markup files and create pages from them dynamicly."
+					"The design you see is highly inspired from the Solid State template of HTML5 UP who does a great job creating responsive designs you can use.",
+					"Using this design as a baseline, I had to create the component structure for the website and style it using TailwindCSS, while leveraging Next.js SSG features to ensure that multiple identical pages could be generated from the same template."
 				]
 			}
 		]
