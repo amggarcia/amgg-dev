@@ -72,6 +72,7 @@ const Home = ({ projects }: InferGetStaticPropsType<typeof getStaticProps>) => {
           </Section>
         </BackgroundImageContainer>
       </main>
+      <div className="hidden">24042024</div>
     </div>
   );
 };
